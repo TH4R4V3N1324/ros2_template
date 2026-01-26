@@ -1,0 +1,11 @@
+# Example of custom service message
+# structure is request --- response
+#
+# This can include simple data types like int or bool
+# Alternatively, standard message types like geometry_msgs/msg/Twist can be used
+
+# Request sent by the client
+int64 number
+---
+# Response from the server
+bool success
