@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>template_py_pkg</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="raven.hollick@gmail.com">raven</maintainer>
+  <license>TODO: License declaration</license>
+
+  <!--
+  ________________________________________________________________
+  # Runtime dependencies required to run this Python ROS2 package
+  # should be added here using the depend tag.
+  #
+  # Multiple dependencies can be added with multiple depend tags.
+  # These may include ROS client libraries, message packages,
+  # service/action interface packages, and utility libraries.
+  #
+  # Example: <depend>std_msgs</depend>
+  # Example: <depend>example_interfaces</depend>
+  ________________________________________________________________
+  -->
+  <depend>rclpy</depend>
+
+  <!--
+  ________________________________________________________________
+  # Test dependencies used by colcon test and ament linters.
+  # Add/remove test tools here based on project needs.
+  ________________________________________________________________
+  -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <!--
+    build_type tells ROS2 which build system this package uses.
+    Use ament_python for pure Python packages.
+    -->
+    <build_type>ament_python</build_type>
+  </export>
+</package>

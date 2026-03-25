@@ -1,0 +1,18 @@
+# Example of custom action message
+# structure is Goal --- Result --- Feedback
+#
+# This can include simple data types like int or bool
+# Alternatively, standard message types like geometry_msgs/msg/Twist can be used
+
+
+# Goal - what the client sends to request the action
+int32 target_count
+---
+# Result - final outcome sent when action completes
+bool success
+string message
+int32 final_count
+---
+# Feedback - periodic updates during action execution
+int32 current_count
+float32 percent_complete
